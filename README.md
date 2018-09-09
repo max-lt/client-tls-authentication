@@ -5,7 +5,7 @@ This repository is made to test client tls authentication.
 
 ### Dependencies:
 
-You will need docker and openssl installed on your machine.
+You will need **docker** and **openssl** installed on your machine.
 
 ### Prerequisites:
 You must have a certificate for your server: (it can be [self signed](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)*)
