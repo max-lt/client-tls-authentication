@@ -1,0 +1,19 @@
+[ ca ] 
+default_ca = CA_default
+ 
+[ CA_default ] 
+default_md = sha256
+
+[subj]
+# blank on purpose
+
+[req]
+distinguished_name = subj
+req_extensions = v3_req
+x509_extensions = v3_ca
+
+# https://security.stackexchange.com/questions/49229/root-certificate-key-usage-non-self-signed-end-entity
+[ v3_req ]
+basicConstraints=CA:true
+keyUsage = digitalSignature, nonRepudiation, keyCertSign
+extendedKeyUsage=serverAuth, clientAuth
